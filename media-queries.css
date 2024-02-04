@@ -1,0 +1,126 @@
+/* Responsiveness */
+@media screen and (max-width: 998px) {
+    .home-content h1 {
+        font-size: 5.8rem;
+    }
+    .container {
+        padding-block: 40px;
+    }
+    .home-content p {
+        font-size: 1.4rem;
+        margin-bottom: 2.0rem;
+    }
+    .home-content .start-btn {
+        width: 16.0rem;
+        height: 4.5rem;
+        font-size: 1.6rem;
+        letter-spacing: .08rem;
+    }
+    .popup-info {
+        width: 40.0rem;
+        padding: 0.8rem 2.0rem;
+    }
+    .popup-info h2 {
+        font-size: 3.0rem;
+    }
+    .popup-info .info {
+        font-size: 1.4rem;
+        margin: 0.3rem 0;
+    }
+    .popup-info .btn-group .info-btn {
+        width: 10.0rem;
+        height: 3.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+    .home-content p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .home-content .start-btn {
+        width: 14.0rem;
+        height: 4.0rem;
+        font-size: 1.4rem;
+    }
+    .popup-info {
+        width: 35.0rem;
+        padding: 0.6rem 1.5rem;
+    }
+    .popup-info h2 {
+        font-size: 2.5rem;
+    }
+    .popup-info .info {
+        font-size: 1.2rem;
+        margin: 0.2rem 0;
+    }
+    .popup-info .btn-group .info-btn {
+        width: 9.0rem;
+        height: 3.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* Styles for devices up to 479px width */
+    body {
+        background-attachment: scroll;
+        overflow: hidden; /* Ensures background image doesn't move */
+    }
+    .body{
+        filter: blur(5px); /* Adjust the blur amount as needed */
+        transition: filter 0.3s ease; /* Add transition for smooth effect */
+    }
+    .main,
+    .quiz-section {
+        background-attachment: scroll !important; /* Override background-attachment to scroll */
+    }
+    .quiz-box,
+    .result-box {
+        max-width: calc(100% - 2rem); /* Adjust the max-width of the boxes to fit within the screen */
+        margin: 0 1rem; /* Add some horizontal margin to prevent the boxes from sticking to the edges */
+    }
+
+    /* Additional styles */
+    .home-content {
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        height: 100vh; /* Adjust the height as needed */
+        width: 100%; /* Ensure it spans the full width */
+        /* Additional styles as needed */
+    }
+
+    /* CSS for blurring the home section */
+    .home.blur {
+        filter: blur(5px); /* Adjust the blur amount as needed */
+        transition: filter 0.3s ease; /* Add transition for smooth effect */
+    }
+
+    /* Remove blue background */
+    body {
+        background-color: transparent; /* Set background color to transparent to prevent the blue background */
+    }
+    .main,
+    .quiz-section {
+        background-color: transparent !important; /* Set background color of these sections to transparent */
+    }
+
+    /* Styles for devices between 480px and 767px width */
+    .result-box {
+        max-width: calc(100% - 4rem); /* Adjust the max-width of the result box to fit within the screen */
+        margin: 0 2rem; /* Add some horizontal margin to prevent the box from sticking to the edges */
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    /* Styles for devices between 480px and 767px width */
+    .result-box {
+        max-width: calc(100% - 4rem); /* Adjust the max-width of the result box to fit within the screen */
+        margin: 0 2rem; /* Add some horizontal margin to prevent the box from sticking to the edges */
+    }
+}
